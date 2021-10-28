@@ -17,7 +17,7 @@
 <body>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'signup')">signup</button>
-        <button class="tablinks" onclick="openTab(event, 'login')">login</button>
+        <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'login')">login</button>
     </div>
 
 
@@ -35,13 +35,13 @@
                     <input type="text">
                 </div>
                 <div>
-                    <fieldset>
-                        <legend>Gender</legend>
+                    <p style="width:min-content;">Gender</p>
+                    <div style="float: right;">
                         <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender" value="male">
+                        <input type="radio" id="male" name="gender" value="male" style="float: none;">
                         <label for="female">Female</label>
-                        <input type="radio" id="female" name="gender" value="female">
-                    </fieldset>
+                        <input type="radio" id="female" name="gender" value="female" style="float: none;">
+                    </div>
                 </div>
                 <div>
                     <label for="">Mobile no</label>
@@ -89,7 +89,9 @@
     </div>
 
 
-
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+// Get the element with id="defaultOpen" and click on it
+
 function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;

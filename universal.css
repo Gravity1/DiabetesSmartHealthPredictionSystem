@@ -1,3 +1,7 @@
+input {
+    float: right;
+}
+
 h2 {
     padding: 5%;
     color: #fff;
