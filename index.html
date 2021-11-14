@@ -15,83 +15,85 @@
 </head>
 
 <body>
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'signup')">signup</button>
-        <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'login')">login</button>
-    </div>
+    <div class="bg">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'signup')">signup</button>
+            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'login')">login</button>
+        </div>
 
 
-    <div id="signup" class="tabcontent">
-        <!-- NO PASSWORD FUNCTIONALTY    -->
-        <form action="" id=" signup_form" name="signup_form" method="#">
-            <h2>Sign up</h2>
-            <div class="form-content">
-                <div>
-                    <label for="">First Name</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Last Name</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <p style="width:min-content;">Gender</p>
-                    <div style="float: right;">
-                        <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender" value="male" style="float: none;">
-                        <label for="female">Female</label>
-                        <input type="radio" id="female" name="gender" value="female" style="float: none;">
+        <div id="signup" class="tabcontent">
+            <!-- NO PASSWORD FUNCTIONALTY    -->
+            <form action="" id=" signup_form" name="signup_form" method="#">
+                <h2>Sign up</h2>
+                <div class="form-content">
+                    <div>
+                        <label for="">First Name</label>
+                        <input type="text">
                     </div>
-                </div>
-                <div>
-                    <label for="">Mobile no</label>
-                    <input type="tel">
-                </div>
-                <div>
-                    <label for="">Address</label>
-                    <input type="email">
-                </div>
+                    <div>
+                        <label for="">Last Name</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p style="width:min-content;">Gender</p>
+                        <div style="float: right;">
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="male" style="float: none;">
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="female" style="float: none;">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Mobile no</label>
+                        <input type="tel">
+                    </div>
+                    <div>
+                        <label for="">Address</label>
+                        <input type="email">
+                    </div>
 
 
-                <!-- UNCOMMENT KAMA UNADAI OCCUPATION -->
-                <!-- <div>
+                    <!-- UNCOMMENT KAMA UNADAI OCCUPATION -->
+                    <!-- <div>
                 <label for="">Occupation</label>
                 <input type="text">
             </div> -->
 
-                <div>
-                    <label for="">Date of Birth</label>
-                    <input type="date">
+                    <div>
+                        <label for="">Date of Birth</label>
+                        <input type="date">
+                    </div>
+                    <button type="submit">Submit</button>
                 </div>
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+            </form>
+        </div>
+        <div id="login" class="tabcontent">
+            <form action="form.html" id=" login_form" name="login_form" method="#">
+                <h2>Log in</h2>
+                <div class="form-content">
+                    <div>
+                        <label for="">Username</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password">
+                    </div>
+
+
+                    <button type="submit">Login</button>
+                    <p>Forgot password?</p>
+                    <a href="#">reset password</a>
+                </div>
+            </form>
+        </div>
+
+
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
     </div>
-    <div id="login" class="tabcontent">
-        <form action="" id=" login_form" name="login_form" method="#">
-            <h2>Log in</h2>
-            <div class="form-content">
-                <div>
-                    <label for="">Username</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Password</label>
-                    <input type="password">
-                </div>
-
-
-                <button type="submit">Login</button>
-                <p>Forgot password?</p>
-                <a href="#">reset password</a>
-            </div>
-        </form>
-    </div>
-
-
-    <script>
-        document.getElementById("defaultOpen").click();
-    </script>
 </body>
 
 </html>

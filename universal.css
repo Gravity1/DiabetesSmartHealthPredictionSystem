@@ -1,3 +1,25 @@
+body,
+html {
+    height: 100%;
+    background-image: url("assets/img/doctor-6701410.jpg");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 35%;
+    margin-right: 34%;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
 input {
     float: right;
 }
@@ -67,7 +89,6 @@ div {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
     border-top: none;
 }
 
